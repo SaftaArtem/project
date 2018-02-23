@@ -1,1 +1,69 @@
 @import "normalize.css";
+body {
+  background: url('../img/header-bg.jpg') no-repeat center top;
+  background-size: auto;
+}
+.page-wrapper {
+  width: 1300px;
+  height: 9000px;
+  margin: 0 auto;
+  max-width: 1300px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  .header {
+    display: flex;
+    flex-grow: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    .nav {
+      display: flex;
+      flex-basis: 50%;
+      ul {
+        display: block;
+        height: 706px;
+        width: 100%;
+        padding-top: 25px;
+        text-align: right;
+        background: black;
+        opacity: 0.75;
+        li {
+          display: inline-block;
+          margin: 20px   50px 0 0;
+          a {
+            color: #5C5CB7;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .logo {
+      margin: 30px 0 0 50px;
+    }
+  }
+}
+.main {
+  margin-top: -180px;
+  margin-left: 30px;
+  h1 {
+    font-size: 50px;
+    color: #5C5CB7;
+  }
+  p {
+    font-size: 25px;
+    color: #5C5CB7;
+    margin-left: 120px;
+  }
+}
+.last-collection {
+  text-align: center;
+  color: #5C5CB7;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+
+

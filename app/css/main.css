@@ -1,1 +1,87 @@
 @import url(normalize.css);
+body {
+  background: url("../img/header-bg.jpg") no-repeat center top;
+  -webkit-background-size: auto auto;
+          background-size: auto; }
+
+.page-wrapper {
+  width: 1300px;
+  height: 9000px;
+  margin: 0 auto;
+  max-width: 1300px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .page-wrapper .header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+        -ms-flex-align: start;
+            align-items: start; }
+    .page-wrapper .header .nav {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-basis: 50%;
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%; }
+      .page-wrapper .header .nav ul {
+        display: block;
+        height: 706px;
+        width: 100%;
+        padding-top: 25px;
+        text-align: right;
+        background: black;
+        opacity: 0.75; }
+        .page-wrapper .header .nav ul li {
+          display: inline-block;
+          margin: 20px   50px 0 0; }
+          .page-wrapper .header .nav ul li a {
+            color: #5C5CB7;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none; }
+    .page-wrapper .header .logo {
+      margin: 30px 0 0 50px; }
+
+.main {
+  margin-top: -180px;
+  margin-left: 30px; }
+  .main h1 {
+    font-size: 50px;
+    color: #5C5CB7; }
+  .main p {
+    font-size: 25px;
+    color: #5C5CB7;
+    margin-left: 120px; }
+
+.last-collection {
+  text-align: center;
+  color: #5C5CB7;
+  margin-top: 100px;
+  margin-bottom: 50px; }
