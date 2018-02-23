@@ -5,10 +5,9 @@ body {
           background-size: auto; }
 
 .page-wrapper {
-  width: 1300px;
+  max-width: 1360px;
   height: 9000px;
   margin: 0 auto;
-  max-width: 1300px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -21,14 +20,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column; }
   .page-wrapper .header {
+    position: relative;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: 0;
-    -webkit-flex-grow: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -37,12 +33,83 @@ body {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-    -webkit-align-items: start;
-        -ms-flex-align: start;
-            align-items: start; }
+            justify-content: space-between; }
+    .page-wrapper .header .nav, .page-wrapper .header .logo {
+      -webkit-flex-basis: 674px;
+          -ms-flex-preferred-size: 674px;
+              flex-basis: 674px;
+      height: 765px; }
     .page-wrapper .header .nav {
+      background: #000;
+      opacity: 0.8; }
+      .page-wrapper .header .nav ul {
+        margin-top: 25px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-basis: 100%;
+            -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+        height: 50px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .page-wrapper .header .nav ul li {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          display: inline-block;
+          margin-left: 15px; }
+          .page-wrapper .header .nav ul li a {
+            color: #FFB932;
+            font-size: 12px;
+            text-decoration: none; }
+    .page-wrapper .header .logo {
+      background: #FFB932;
+      opacity: 0.7; }
+      .page-wrapper .header .logo a {
+        display: block;
+        margin-top: 30px;
+        margin-left: 90px; }
+    .page-wrapper .header .main {
+      width: 100%;
+      top: 600px;
+      text-align: center;
+      position: absolute; }
+      .page-wrapper .header .main h1 {
+        color: #456876;
+        font-size: 55px;
+        margin-bottom: 18px; }
+      .page-wrapper .header .main p {
+        color: #456876;
+        font-size: 20px; }
+  .page-wrapper .lastest-collection {
+    margin: 50px 0; }
+    .page-wrapper .lastest-collection h2 {
+      text-align: center;
+      font-size: 20px;
+      color: #456876; }
+  .page-wrapper .grid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 674px; }
+    .page-wrapper .grid .left, .page-wrapper .grid .right {
+      background: grey;
+      border: 1px solid black;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -50,38 +117,33 @@ body {
       -webkit-flex-basis: 50%;
           -ms-flex-preferred-size: 50%;
               flex-basis: 50%; }
-      .page-wrapper .header .nav ul {
-        display: block;
-        height: 706px;
-        width: 100%;
-        padding-top: 25px;
-        text-align: right;
-        background: black;
-        opacity: 0.75; }
-        .page-wrapper .header .nav ul li {
-          display: inline-block;
-          margin: 20px   50px 0 0; }
-          .page-wrapper .header .nav ul li a {
-            color: #5C5CB7;
-            font-size: 15px;
-            font-weight: 700;
-            text-decoration: none; }
-    .page-wrapper .header .logo {
-      margin: 30px 0 0 50px; }
-
-.main {
-  margin-top: -180px;
-  margin-left: 30px; }
-  .main h1 {
-    font-size: 50px;
-    color: #5C5CB7; }
-  .main p {
-    font-size: 25px;
-    color: #5C5CB7;
-    margin-left: 120px; }
-
-.last-collection {
-  text-align: center;
-  color: #5C5CB7;
-  margin-top: 100px;
-  margin-bottom: 50px; }
+    .page-wrapper .grid .left {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%; }
+      .page-wrapper .grid .left img {
+        padding-bottom: 75%; }
+    .page-wrapper .grid .right {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      .page-wrapper .grid .right .right-itm {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 50%;
+            -ms-flex: 0 1 50%;
+                flex: 0 1 50%; }
