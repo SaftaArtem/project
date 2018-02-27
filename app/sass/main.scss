@@ -1,4 +1,6 @@
 @import "normalize.css";
+@import "slick/slick.css";
+@import "slick/slick-theme.css";
 body {
   background: url('../img/header-bg.jpg') no-repeat center top;
   background-size: auto;
@@ -14,9 +16,8 @@ body {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     .nav, .logo {
-      flex-basis: 674px;
+      flex-basis: 50%;
       height: 765px;
     }
     .nav {
@@ -77,19 +78,23 @@ body {
   .grid {
     display: flex;
     flex-direction: row;
-    height: 674px;
+    margin-bottom: 40px;
     .left, .right {
-      background: grey;
-      border: 1px solid black;
       display: flex;
       flex-basis: 50%;
     }
     .left {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      background: #484848;
       img {
-        padding-bottom: 75%;
+        width: 100%;
+        height: auto;
+      }
+      .left-header {
+        text-align: center;
+        margin-top: 60px;
+        color: #fff;
       }
     }
     .right {
@@ -98,11 +103,58 @@ body {
       flex-wrap: wrap;
       .right-itm {
         flex: 0 1 50%;
+        line-height: 0;
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
     }
-
   }
-}
+
+  .slider-first {
+    
+    .slick-next {
+      top: 40%;
+      right: 20px;
+    }
+    .slick-prev {
+      top: 40%;
+      left: 20px;
+      z-index: 1001;
+    }
+
+    .slide {
+      position: relative;
+      a {
+        margin: auto;   
+        .slider1__img {
+          margin: auto;
+          width: 70%;
+          height: auto;
+          &:hover {
+            border: 3px solid #456876;
+          }
+        }
+      }
+      .description {
+        position: absolute;
+        top: 80%;
+        width: 100%;
+        .slide__header, .price {
+          text-align: center;
+          mark {
+            text-decoration:line-through
+          }
+        }
+      } 
+    }
+  }
+}  
+  
+
+
+
 
 
 
