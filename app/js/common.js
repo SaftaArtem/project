@@ -8,4 +8,9 @@ $(document).ready(function () {
     prevArrow: '<img src="img/icons/left.png" alt="prev" class="slick-prev">',
     nextArrow: '<img src="img/icons/right.png" alt="prev" class="slick-next">'
   });
+  $('.slider-second').slick({
+    autoplaySpeed: 1000,
+    vertical: true,
+    dots: true,
+  });
 });

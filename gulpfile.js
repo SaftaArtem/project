@@ -65,7 +65,7 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function(){
 	gulp.watch('app/*.html', browserSync.reload);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
 });
-gulp.task('build', ['sass', 'scripts'], function() {
+gulp.task('build', ['sass', 'img', 'scripts'], function() {
 
     var buildCss = gulp.src([ // Переносим CSS стили в продакшен
         'app/css/main.css',
@@ -75,6 +75,9 @@ gulp.task('build', ['sass', 'scripts'], function() {
 
     var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
     .pipe(gulp.dest('dist/fonts'))
+
+    var buildImg = gulp.src('app/img/**/*')
+    .pipe(gulp.dest('dist/img'))
 
     var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
     .pipe(gulp.dest('dist/js'))
