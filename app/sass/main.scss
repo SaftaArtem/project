@@ -416,9 +416,15 @@ body {
     .footer {
       flex-direction: column;
       font-size: 15px;
+      text-align: center;
+
+      .email_us {
+        margin:0;
+      }
     }
   }
 }
+
 @media screen and (max-width: 600px) {
   .page-wrapper {
     background: url('../img/header-bg-mini.jpg') no-repeat center top;
@@ -457,13 +463,27 @@ body {
       }
 
     }
+
+    .grid {
+      flex-direction: column;
+
+      .left {
+
+        .left-header {
+          margin: 20px 0;
+        }
+      }
+    }
+
     .follow_us {
       flex-direction: column;
       text-align: center;
       padding: 0;
+      font-size: 15px;
       
       form {
-        width: 100%;
+        width: 50%;
+        margin: 0 auto;
       }
     }
 
@@ -473,12 +493,25 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        flex-basis: 50%;
+        padding: 0 30px 0 10px;
+
+        .itm {
+          flex-basis: 40%;
+          margin-bottom: 20px;
+        }
+
+        .border_none {
+          border-right: 1px solid rgb(102, 102, 102);  
+        }
       }
 
       .footer {
         margin: 10px;
         text-align: center;
+
+        .email_us {
+          margin: 0;
+        }
       }
     }
   }
