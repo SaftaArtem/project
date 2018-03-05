@@ -40,6 +40,26 @@ body {
           }
         }
       }
+      .hamburger {
+        display: none;
+        width: 16px;
+        height: 12px;
+        margin: 6px;
+        position: relative;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        
+        &::after {
+          content: "";
+          position: absolute;
+          display: block;
+          right: 0;
+          left: 0;
+          top: 5px;
+          height: 2px;
+          background: #fff;
+        }
+      }
     }
     .logo {
       background: #FFB932;
@@ -323,13 +343,40 @@ body {
       }
 
       .nav {
+        position: relative;
         
-        ul {
-          height: 32.98px;
+        .menu {
+          position: absolute;
+          left: 200px;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+          margin: 0;
+          align-items: start;
+          justify-content: start;
+          opacity: 0;
+          transition: 1s;
 
-          li>a {
-            font-size: 8px;
+
+          li {
+            margin-left: 30px;
+            a {
+              font-size: 25px;  
+            }
           }
+        }
+        .open {
+            top: 10px;
+            left: 0;
+            opacity: 1;
+          }
+        .hamburger {
+          text-align: right;
+          margin-top: 20px;
+          margin-right: 0;
+          margin-left: 85%;
+          display: block;
         }
       }
       .logo {

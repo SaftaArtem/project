@@ -68,6 +68,23 @@ body {
             color: #FFB932;
             font-size: 12px;
             text-decoration: none; }
+      .page-wrapper .header .nav .hamburger {
+        display: none;
+        width: 16px;
+        height: 12px;
+        margin: 6px;
+        position: relative;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff; }
+        .page-wrapper .header .nav .hamburger::after {
+          content: "";
+          position: absolute;
+          display: block;
+          right: 0;
+          left: 0;
+          top: 5px;
+          height: 2px;
+          background: #fff; }
     .page-wrapper .header .logo {
       background: #FFB932;
       opacity: 0.7; }
@@ -313,10 +330,50 @@ body {
     background: url("../img/header-bg-midle.jpg") no-repeat center top; }
     .page-wrapper .header .logo, .page-wrapper .header .nav {
       height: 432px; }
-    .page-wrapper .header .nav ul {
-      height: 32.98px; }
-      .page-wrapper .header .nav ul li > a {
-        font-size: 8px; }
+    .page-wrapper .header .nav {
+      position: relative; }
+      .page-wrapper .header .nav .menu {
+        position: absolute;
+        left: 200px;
+        height: auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        margin: 0;
+        -webkit-box-align: start;
+        -webkit-align-items: start;
+            -ms-flex-align: start;
+                align-items: start;
+        -webkit-box-pack: start;
+        -webkit-justify-content: start;
+            -ms-flex-pack: start;
+                justify-content: start;
+        opacity: 0;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s; }
+        .page-wrapper .header .nav .menu li {
+          margin-left: 30px; }
+          .page-wrapper .header .nav .menu li a {
+            font-size: 25px; }
+      .page-wrapper .header .nav .open {
+        top: 10px;
+        left: 0;
+        opacity: 1; }
+      .page-wrapper .header .nav .hamburger {
+        text-align: right;
+        margin-top: 20px;
+        margin-right: 0;
+        margin-left: 85%;
+        display: block; }
     .page-wrapper .header .logo a > img {
       width: 70px;
       height: auto; }
