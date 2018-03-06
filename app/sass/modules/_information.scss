@@ -1,0 +1,41 @@
+.information {
+  padding-top: 50px;
+  background: rgb(51, 51, 51);
+  color: #aaa;
+
+  .columns {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 25%;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+
+    .itm {
+      margin: 0 auto;
+      width: 100px;
+      border-right: 1px solid rgb(102, 102, 102);
+      padding: 0 10px;
+
+      p:first-child {
+        color: #fff;
+      }
+    }
+
+    .border_none {
+      border: none;
+    }
+  }
+
+  hr {
+    border: none;
+    color: rgb(102, 102, 102);
+    background-color: rgb(102, 102, 102);
+    height: 2px;
+  }
+
+  .footer {
+    margin: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

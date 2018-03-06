@@ -1,0 +1,43 @@
+.grid {
+  display: flex;
+  flex-direction: row;
+
+  .left, .right {
+    display: flex;
+    flex-basis: 50%;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    background: #484848;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .left-header {
+      text-align: center;
+      height: auto;
+      color: #fff;
+      margin-top: 10%;
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .right-itm {
+      flex: 0 1 50%;
+      line-height: 0;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.follow_us {
+  color: #aaa;
+  margin: 50px 0;
+  padding: 50px 50px 65px 50px;
+  font-size: 23px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  form {
+    vertical-align: center;
+    width: 50%;
+    white-space: nowrap;
+
+    input {
+      width: 50%;
+      height: 20px;
+    }
+
+    button {
+      border: none;
+      background: white;
+      width: 27px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  form, .social {
+    height: 35px;
+  }
+}
