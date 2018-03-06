@@ -20,11 +20,8 @@ gulp.task('sass', function() {
 
 gulp.task('scripts', function() {
     return gulp.src([ // Берем все необходимые библиотеки
-        'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
-        'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js', // Берем Magnific Popup
-				'app/libs/modernizr/modernizr.custom.min.js',
-				'app/libs/touchSwipe/jquery.touchSwipe-1.2.4.min.js',
-        'app/libs/wmuslider/jquery.wmuslider-min.js'
+        'app/libs/jquery/dist/jquery.min.js',
+        'app/libs/slick/slick.js' // Берем jQuery
         ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл
